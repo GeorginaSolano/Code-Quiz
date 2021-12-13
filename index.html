@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JS Code Quiz</title>
 </head>
+
+<header>
+        <h4 id="view-high-scores">View High Scores</h4> 
+        <h4 class="timer">Time: <span id="timer"></span></h4>
+ </header>
 <body>
-    
+    <!-- //user is given instructions and when button clicked game starts -->
+    <div id="intstructions-container" class="show">
+        <div class="instructions start">
+            <h1>Coding Quiz Challenge</h1>  
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your scoretime by ten seconds!
+            </p>
+            <button class="btn startend" id="start-game">Start Quiz</button>
+        </div>    
+    </div>
+
+    <!-- // questions will appear here -->
+    <div id="question-container" class="hidden">
+        <div class="container questions">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-box"></div>
+        </div>
+    </div>
+    <div id="end-container" class="hidden">
+        <div class="container end">
+         <div id=score-banner>
+             <h1>All done!</h1>
+         </div>  
+
+         <!-- // form to enter initials  -->
+         <form id="initials-form" class="initials">
+           <p> Enter Initials:
+             <input type="text" name="initials" id="initials" class="text-input" />
+            <!-- // button to submit initials -->
+             <button class="btn startend" id="sumbit-score" type="submit">Submit</button> </p>
+           </form>
+         </div>
+     </div>
+     <!-- // high-score-container stores the high scores recorded -->
+     <div id="high-score-container" class="hidden">
+        <div class="high-scores container">
+          <h1 class="high-score">High Scores</h1>
+          <ol id="high-score-list" class="score-list"></ol>
+      <div>
+          <!-- // buttons to Clear highscores and to go back to start -->
+          <button class="btn" id="go-back">Go back</button>
+          <button class="btn" id="clear-high-scores">Clear high scores</button>
+      </div>
+      </div>
+  </div>
+  <div class="hidden" id="correct">
+    <h2>Correct!</h2>
+</div>
+<div class="hidden" id="wrong">
+    <h2>Wrong</h2>
+</div>
+
 </body>
+<script src="./assets/js/script.js"></script> 
 </html>

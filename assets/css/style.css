@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+}
+.instructions {
+    padding:20px;
+    flex-direction: column;
+    width:50%;
+    margin:auto;
+}   
+h1 {
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+
+}
+
+.start {
+    align-items: center;
+    text-align: center;
+}
+
+.show {
+    display: flex;
+
+}
+
+.hidden {
+    display: none;
+}
