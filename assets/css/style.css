@@ -33,6 +33,25 @@ p {
     text-align: center;
 }
 
+.questions {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+
+}
+.end input {
+    outline: blueviolet;
+    border-width: 1.5px;
+    padding: 5px;
+    width: 35%;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.end h1, .end p {
+    text-align: left;
+}
 .show {
     display: flex;
 
@@ -40,4 +59,26 @@ p {
 
 .hidden {
     display: none;
+
+}
+
+#question {
+    color: rgb(52, 23, 78);
+    text-align: left;
+    font: size 20px;
+    font-weight: bold;
+}
+
+#high-score {
+    text-align:left;
+}
+
+/*  styling for buttons */
+.btn {
+    background: rgb(164, 120, 206);
+    color: rgba(44, 42, 42, 0.842);
+    padding: 10px;
+    border-radius: 10px;
+    border:rgb(164, 120, 206);
+    margin-top: 10px;
 }
