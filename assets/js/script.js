@@ -16,12 +16,14 @@ var btnClearScoresEl = document.querySelector("#clear-high-scores");
 var startGameEl = document.querySelector("#intstructions-container");
 var btnStartEl = document.querySelector("#start-game");
 var timerEl = document.querySelector(".timer");
-var timeLeft = 20;
+var timeLeft = 30;
 var timerInterval;
 var questionIndex = 0;
 
 var score = 0;
 var highScores =[];
+
+var arrayShuffledQuestions=[];
 
 // array of questions for quiz
 var questions = [
@@ -70,7 +72,7 @@ function showStartPage() {
 }
 
 function setTime(){
-    timeLeft = 20;
+    // timeLeft = 20;
     var timerCheck = setInterval(function(){
         timerEl.innerText = timeLeft;
         timeLeft --;
@@ -92,7 +94,7 @@ function startGame() {
     containerQuestionsEl.classList.add("show");
     // Shuffle questions
     arrayShuffledQuestions = questions.sort(() => Math.random()-0.5);
-    setTime;
+    setTime();
     setQuestion();
 }
 

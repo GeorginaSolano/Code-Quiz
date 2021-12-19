@@ -65,7 +65,7 @@ p {
 #question {
     color: rgb(52, 23, 78);
     text-align: left;
-    font: size 20px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -106,10 +106,10 @@ p {
 .answerbtn {
     width: 50%;
     text-align: left;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .banner {
     font-size: 25px;
-    
+
 }
