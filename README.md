@@ -14,4 +14,4 @@ Partially working quiz.
 
 ![image](./images/intropage.png)
 ![image](./images/questionfirst.png)
-![image](./images./endgame.png)
+![image](./images/endgame.png)
