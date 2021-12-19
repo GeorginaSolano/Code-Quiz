@@ -12,6 +12,6 @@ task is incomplete
 
 Partially working quiz.
 
-![image](./images./intropage.png)
-![image](./questionfirst.png)
+![image](./images/intropage.png)
+![image](./images/questionfirst.png)
 ![image](./images./endgame.png)
